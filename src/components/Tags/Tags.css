@@ -1,0 +1,46 @@
+.tags__input-container{
+    border: 1px solid #1976d2;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.tag-item{
+    background-color: rgba(25, 118, 210, 0.12);
+    display: inline-block;
+    padding: .3rem .75em .5rem .75em;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+
+.tag-item .tag-close{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: #137ce0;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: 2px;
+    margin-left: .5rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tag-item .tag-close:hover{
+    background-color: #0363c4;
+}
+
+.tags-input{
+    flex-grow: 1;
+    padding: .5rem 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

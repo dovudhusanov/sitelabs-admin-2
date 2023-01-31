@@ -1,0 +1,32 @@
+.job-read .job-read-container {
+  max-width: 100%;
+}
+
+.job-read-header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.job-read-title {
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.job-read-description {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #000016;
+  font-weight: 500;
+}
+
+.job-read-not-found {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://blog.hubspot.com/hs-fs/hubfs/404-error-page-iconfinder.jpg?width=650&name=404-error-page-iconfinder.jpg");
+}

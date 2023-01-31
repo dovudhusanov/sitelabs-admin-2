@@ -1,0 +1,10 @@
+.admin-panel-items-left{
+    min-height: 100vh;
+    background-color: var(--color-white-5);
+}
+
+@media screen and (min-width: 768px) {
+    .admin-panel-items-left{
+        margin-left: 16rem;
+    }
+}

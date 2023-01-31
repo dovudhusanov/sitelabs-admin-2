@@ -1,0 +1,93 @@
+.login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+      70deg,
+      rgba(14, 55, 169, 0.5),
+      rgba(31, 58, 193, 0.2)
+    ),
+    url("https://img.freepik.com/premium-vector/programmer-is-coding-while-lying-floor-house_152995-275.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login__container {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(2, 29, 52, 0.7);
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px 25px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login__logo {
+  width: 230px;
+  height: 90px;
+}
+
+.login__formcontainer {
+  width: 100%;
+}
+
+.login__forminputcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 15px 0;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+.login__forminput {
+  width: 90% !important;
+  display: block !important;
+  font-size: 18px !important;
+}
+
+.login__formbtncontainer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__formbtn {
+  background-color: #6c2efc !important;
+  color: #fff !important;
+  width: 100% !important;
+  max-width: 300px !important;
+  transition: 0.3s ease;
+}
+
+.login__formbtn:hover{
+  background-color: #5a1de7 !important;
+}
+
+.loader__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(2, 29, 52, 0.7);
+}
+
+.login__error {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border-bottom: 4px solid #ff0000;
+}
+
+.login__error h2 {
+  font-size: 26px;
+  color: red;
+}

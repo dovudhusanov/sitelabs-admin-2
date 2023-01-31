@@ -1,0 +1,24 @@
+.css-177gid-MuiTableCell-root {
+  text-transform: capitalize !important;
+}
+
+.adInterest-container {
+  display: flex;
+  padding: 20px 30px;
+  flex-direction: column;
+}
+
+.add-interest-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.add-interest-form {
+  margin: 10px 0;
+}
+
+.add-interest-form p {
+  font-size: 12px;
+  color: red;
+}

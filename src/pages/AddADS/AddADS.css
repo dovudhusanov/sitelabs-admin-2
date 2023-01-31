@@ -1,0 +1,5 @@
+.profile__page-blogs{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-white-5);
+}

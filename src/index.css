@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800;900&display=swap");
+
+#root {
+  --color-primary: #6c2efc;
+  --color-primary-2: rgb(122, 6, 240);
+  --color-primary-3: #3e2093;
+  --color-primary-4: #5029bc;
+  --color-white: #ffffff;
+  --color-white-5: #e6e6e6;
+  --color-white-10: #ced2db;
+  --color-white-60: #acb4c2;
+  --color-white-b: #bbbbbb;
+  --color-black: #000000;
+  --color-grey-white: #afafb6;
+  --color-grey-5: rgba(175, 179, 180, 0.59);
+  --color-grey-40: #a7a7a7;
+  --color-grey-70: #7a7a7a;
+  --color-dark-grey: #3f3f3f;
+  --color-dark-grey-333: #333333;
+  --color-grey-cyan: #555f77;
+  --color-dark-gray-cyan: #2f4351;
+  --color-red: red;
+  --color-cyan: rgb(0, 172, 238);
+  --color-light-blue: #0095ff;
+
+  --item-width: 10px;
+  --item-height: 1px;
+  --rotate: 0deg;
+
+  --bg-color-dashboard: #303542;
+  --bg-color-nos: #4d5567;
+  --bg-color-black: #000000;
+  --bg-color-white: #ffffff;
+  --bg-color-primary: #6c2efc;
+  --bg-color-primary-2: rgb(122, 6, 240);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+*:focus-visible {
+  border: none;
+  outline: none;
+}
+
+::selection {
+  background: var(--bg-color-primary);
+  color: #fff;
+}
+
+.admin-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1090px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  overflow-x: hidden;
+}

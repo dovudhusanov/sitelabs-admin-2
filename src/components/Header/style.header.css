@@ -1,0 +1,132 @@
+.header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 250px;
+}
+
+.header-leftside h1 {
+  font-size: 20px;
+  color: rgb(19, 17, 17);
+}
+
+.header-rightside {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  cursor: pointer;
+  position: relative;
+}
+
+.header-icons.active {
+  color: red !important;
+}
+
+.contact-list-container {
+  position: absolute;
+  clip-path: inset(0 0 100% 0);
+  border-radius: 5px;
+  background-color: #fff;
+  right: -731%;
+  margin-top: 20px;
+  transition: 0.4s ease;
+}
+
+.delete-icon-button {
+  background-color: transparent !important;
+  color: #ff0000 !important;
+}
+
+.contact-list-container.active {
+  clip-path: inset(0 0 0 0);
+}
+
+.contact-list {
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.contact-list-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.contact-list-item.unread {
+  background-color: rgb(245, 245, 245);
+}
+
+.contact-list-item:hover {
+  color: #000;
+  background-color: #e3e3e3;
+  transition: 0.4s ease;
+}
+
+.header-icons:hover,
+.header-icon a:hover {
+  color: blueviolet;
+}
+
+.header-icon a.active {
+  color: blueviolet;
+}
+
+.header-icon:nth-child(2) {
+  margin: 0 15px;
+}
+
+.header-email {
+  font-size: 14px;
+  font-weight: 550;
+  color: lightslategrey;
+}
+
+.contact-email {
+  text-overflow: ellipsis;
+  width: 50%;
+  overflow: hidden;
+}
+
+.contact-info-heading {
+  font-size: 14px;
+  width: 250px;
+  padding: 10px 5px;
+}
+
+.contact-time {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 820px) {
+  .header-email {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header-leftside {
+    display: none;
+  }
+
+  .header-rightside {
+    justify-content: flex-end;
+    width: 100%;
+  }
+}

@@ -1,0 +1,114 @@
+.contact-read {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.contact-read-container {
+  max-width: 550px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.contact-accordian {
+  width: 100%;
+}
+
+.contact-read-btn {
+  background-color: transparent !important;
+  color: red !important;
+}
+
+.contact-read-message {
+  margin-top: 10px !important;
+  text-align: right !important;
+}
+
+.err-contact {
+  width: 250px;
+  background-color: #fff;
+  max-height: 100px;
+  margin-left: 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-user {
+  width: 380px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  height: max-content;
+  margin-right: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.send-user-form-item {
+  margin-top: 20px;
+}
+
+.send-user-form-input {
+  width: 100% !important;
+  font-size: 15px !important;
+}
+
+.send-user-form-textarea {
+  width: 100% !important;
+  position: relative;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.send-user-form-textarea::placeholder {
+  color: hsl(0, 2%, 73%);
+}
+
+.send-user-form-textarea:hover ~ .send-user-form-line {
+  height: 1.5px;
+  background-color: black;
+}
+
+.send-user-form-line {
+  display: block;
+  margin-top: 5px;
+  position: relative;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+
+.send-user-form-line::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: #1976d2;
+  transition: 0.3s ease;
+}
+.send-user-form-textarea:focus ~ .send-user-form-line{
+  height: 1.5px;
+}
+.send-user-form-textarea:focus ~ .send-user-form-line::after {
+  width: 100%;
+}
+
+
+.send-user-form-submit {
+  margin-top: 10px !important;
+}
+
+.send-user-form-btn{
+  background-color: blueviolet !important;
+  width: 100% !important;
+  color: #fff !important;
+}
+
+.err-info{
+  color: red;
+  font-size: 12px;
+}

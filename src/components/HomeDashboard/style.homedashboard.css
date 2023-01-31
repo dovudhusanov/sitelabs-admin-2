@@ -1,0 +1,101 @@
+.homedashboard-container {
+  display: flex;
+  max-width: 1018px;
+  justify-content: space-between;
+}
+
+.homedashboard-statistic {
+  position: relative;
+  background-color: #fff !important;
+  margin: 10px !important;
+  padding: 30px 20px;
+  max-width: 250px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.homedashboard-statistic h1 {
+  font-size: 40px;
+}
+
+.homedashboard-statistic h1 {
+  font-size: 40px;
+}
+
+.homedashboard-statistic h1,
+p {
+  position: relative;
+  font-size: 20px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.homedashboard-statistic::after {
+  content: "";
+  transition: 0.4s ease;
+  animation: animate 2s ease-in-out infinite;
+  bottom: -200%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(190deg, #5019d0, #3e0eaf, #602cda, #301471);
+  position: absolute;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      15% 44%,
+      32% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      16% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.homedashboard-statistic:hover p {
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+.homedashboard-statistic:hover::after {
+  top: -20%;
+  bottom: 0 !important;
+}
+
+.home__dashboard-chart {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.home__dashboard-chart-line {
+  width: 100px !important;
+}
